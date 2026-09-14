@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alejandro García Hernández — Master Full Stack Developer, Operations Manager & Supply Chain Expert. Palma, Islas Baleares." />
+  <meta name="keywords" content="Full Stack Developer, Operations Manager, Supply Chain, Logística, Alejandro García" />
+  <meta property="og:title" content="Alejandro García Hernández — Dev & Ops" />
+  <meta property="og:description" content="Master Full Stack Developer · Operations Manager · Supply Chain Expert" />
+  <meta property="og:type" content="website" />
+  <title>Alejandro García Hernández — Dev & Ops</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AGH<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#services" class="nav-link">Servicios</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para nuevos proyectos
+      </div>
+      <h1 class="hero-name">
+        <span class="name-first">Alejandro</span>
+        <span class="name-last">García Hernández</span>
+      </h1>
+      <p class="hero-tagline">
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor">|</span>
+      </p>
+      <p class="hero-location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Palma, Islas Baleares, España
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          Contáctame
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#about" class="btn btn-ghost">Saber más</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/alejandro-garcía-hernández-66975826" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:alexgh1975@gmail.com" class="social-icon-link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATS STRIP
+  ═══════════════════════════════════════ -->
+  <section class="stats-strip">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number" data-target="25">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="8">0</span><span class="stat-suffix"></span>
+        <span class="stat-label">Empresas líderes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5">0</span><span class="stat-suffix"></span>
+        <span class="stat-label">Certificaciones Tech</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">Orientado a resultados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01. sobre mí</span>
+        <h2 class="section-title">El profesional detrás<br/><em>del código y los procesos</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">
+            Soy un profesional con más de <strong>25 años de experiencia</strong> en operaciones, logística y supply chain, actualmente en transición hacia el desarrollo de software Full Stack. Combino una sólida base operativa con habilidades técnicas emergentes para crear soluciones que mejoran procesos y generan valor real.
+          </p>
+          <p>
+            Mi trayectoria abarca desde la gestión de almacenes y flotas hasta la dirección de operaciones en entornos multinacionales, siempre con foco en la <strong>mejora continua, KPIs y eficiencia</strong>. Hoy aplico esa misma mentalidad analítica al desarrollo de software.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <div>
+                <strong>Visión 360°</strong>
+                <p>Entiendo el negocio desde operaciones hasta tecnología</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <div>
+                <strong>Orientado a datos</strong>
+                <p>Decisiones basadas en KPIs, métricas y análisis</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🚀</span>
+              <div>
+                <strong>Mejora continua</strong>
+                <p>Optimización de procesos como filosofía de trabajo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h3 class="skills-title">Stack & Competencias</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Desarrollo</h4>
+              <div class="skill-tags">
+                <span class="tag tag-dev">Python</span>
+                <span class="tag tag-dev">SQL</span>
+                <span class="tag tag-dev">Git / GitHub</span>
+                <span class="tag tag-dev">Linux</span>
+                <span class="tag tag-dev">Full Stack</span>
+                <span class="tag tag-dev">SOLID</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Operaciones</h4>
+              <div class="skill-tags">
+                <span class="tag tag-ops">Supply Chain</span>
+                <span class="tag tag-ops">Logística</span>
+                <span class="tag tag-ops">KPIs & OPS</span>
+                <span class="tag tag-ops">SAP / Oracle</span>
+                <span class="tag tag-ops">Navision</span>
+                <span class="tag tag-ops">Excel Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Gestión</h4>
+              <div class="skill-tags">
+                <span class="tag tag-mgmt">Liderazgo</span>
+                <span class="tag tag-mgmt">ISO 9001</span>
+                <span class="tag tag-mgmt">ISO 14001</span>
+                <span class="tag tag-mgmt">Auditoría</span>
+                <span class="tag tag-mgmt">Consultoría</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02. servicios & proyectos</span>
+        <h2 class="section-title">¿En qué puedo<br/><em>ayudarte?</em></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Desarrollo Full Stack</h3>
+          <p>Creación de aplicaciones web y herramientas internas usando Python, SQL, bases de datos y principios SOLID. Código limpio, mantenible y orientado a negocio.</p>
+          <ul class="service-features">
+            <li>Automatización de procesos</li>
+            <li>APIs y backends</li>
+            <li>Dashboards de datos</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured" data-aos>
+          <div class="service-featured-badge">⭐ Core</div>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Consultoría Operacional</h3>
+          <p>Análisis y optimización de procesos operativos, logísticos y de supply chain. Implementación de KPIs, mejora continua y reducción de costes.</p>
+          <ul class="service-features">
+            <li>Diagnóstico y plan de acción</li>
+            <li>Implantación de KPIs</li>
+            <li>Auditorías internas</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Gestión Logística & Supply Chain</h3>
+          <p>Diseño y gestión de cadenas de suministro eficientes. Coordinación de flotas, optimización de rutas, control de stocks y gestión de proveedores.</p>
+          <ul class="service-features">
+            <li>Optimización de rutas</li>
+            <li>Control de inventario</li>
+            <li>Gestión de proveedores</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Análisis de Datos & Reporting</h3>
+          <p>Transformación de datos operativos en insights accionables. Cuadros de mando, informes ejecutivos y análisis con Excel avanzado, SQL y herramientas BI.</p>
+          <ul class="service-features">
+            <li>Dashboards ejecutivos</li>
+            <li>Análisis SQL avanzado</li>
+            <li>Reporting automatizado</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Dirección de Operaciones</h3>
+          <p>Liderazgo de equipos multidisciplinares, apertura de nuevas unidades de negocio, implementación de sistemas de gestión y mejora de eficiencia operativa.</p>
+          <ul class="service-features">
+            <li>Team leadership</li>
+            <li>Gestión de proyectos</li>
+            <li>Implementación de ERPs</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <h3>Automatización con Python</h3>
+          <p>Automatización de tareas repetitivas, integración de sistemas, scripts de procesamiento de datos y herramientas para mejorar la productividad operativa.</p>
+          <ul class="service-features">
+            <li>Scripts de automatización</li>
+            <li>Procesamiento de datos</li>
+            <li>Integración de sistemas</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCE TIMELINE
+  ═══════════════════════════════════════ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03. trayectoria</span>
+        <h2 class="section-title">Experiencia<br/><em>profesional</em></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2022 — 2026</span>
+              <span class="timeline-badge">Reciente</span>
+            </div>
+            <h3 class="timeline-role">Operation Manager</h3>
+            <p class="timeline-company">gateretail · Coslada</p>
+            <p class="timeline-desc">Planificación, organización e implementación operativa basada en KPIs. Gestión de stock, soporte Supply Chain, control de costes operativos, soporte EPOS y apertura/cierre de unidades de catering.</p>
+            <div class="timeline-tags">
+              <span>KPIs</span><span>Supply Chain</span><span>Catering Ops</span><span>EPOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2021 — 2022</span>
+            </div>
+            <h3 class="timeline-role">Coordinador de Tráfico</h3>
+            <p class="timeline-company">Hierros y Aceros de Mallorca · Palma</p>
+            <p class="timeline-desc">Organización de flota, planificación y optimización de rutas. Gestión de 19 conductores. Embarque marítimo entre islas y control de facturación de transportistas externos.</p>
+            <div class="timeline-tags">
+              <span>Flota</span><span>Rutas</span><span>Marítimo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2017 — 2021</span>
+            </div>
+            <h3 class="timeline-role">Jefe de Tráfico / Resp. Logística</h3>
+            <p class="timeline-company">Saica Group · Palma, Islas Baleares</p>
+            <p class="timeline-desc">Responsable del departamento de logística en Baleares con equipo propio y subcontratado. Planificación de rutas, control de presupuestos, contratación de transporte y gestión de clientes de grandes superficies.</p>
+            <div class="timeline-tags">
+              <span>Logística</span><span>Presupuestos</span><span>Residuos</span><span>Grandes superficies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2015 — 2017</span>
+            </div>
+            <h3 class="timeline-role">Gerente Adjunto de Tienda</h3>
+            <p class="timeline-company">Lidl España · Palma de Mallorca</p>
+            <p class="timeline-desc">Mando intermedio con equipo de 6–10 personas. Gestión monetaria, elaboración de pedidos, control de stock, inventarios e implantación de producto.</p>
+            <div class="timeline-tags">
+              <span>Retail</span><span>Liderazgo</span><span>Inventarios</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2009 — 2013</span>
+            </div>
+            <h3 class="timeline-role">Gestor de Inmovilizado</h3>
+            <p class="timeline-company">CANAL+ Group · Madrid</p>
+            <p class="timeline-desc">Auditoría y asesoramiento a distribuidores. Formación en sistemas logísticos. Control de material cedido, inventarios y coordinación de rutas nacionales de seguimiento.</p>
+            <div class="timeline-tags">
+              <span>Auditoría</span><span>Formación</span><span>Logística inversa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">2007 — 2008</span>
+            </div>
+            <h3 class="timeline-role">Jefe de Logística de Almacén</h3>
+            <p class="timeline-company">PLASSER ESPAÑOLA · Las Rozas, Madrid</p>
+            <p class="timeline-desc">Al cargo de 10 personas. Integración ERP con SGA, auditor interno ISO 9001, 14001 y OHSAS 18000. Negociación de transporte nacional, internacional y especial.</p>
+            <div class="timeline-tags">
+              <span>ISO 9001</span><span>SGA/ERP</span><span>10 personas</span><span>Auditor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-period">1997 — 2002</span>
+              <span class="timeline-badge timeline-badge--origin">Inicio</span>
+            </div>
+            <h3 class="timeline-role">Coordinador de Logística</h3>
+            <p class="timeline-company">Amcor Pet Packaging · Casarrubios del Monte</p>
+            <p class="timeline-desc">Gestión integral de stocks en SAP/R3 MM3. Planificación de producciones, aprovisionamiento de materias primas, coordinación de pedidos y control de cargas completas entre almacenes.</p>
+            <div class="timeline-tags">
+              <span>SAP R3</span><span>Producción</span><span>Aprovisionamiento</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EDUCATION
+  ═══════════════════════════════════════ -->
+  <section class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04. formación</span>
+        <h2 class="section-title">Educación &<br/><em>Certificaciones</em></h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <span class="edu-date">Ago 2026</span>
+            <h3>SQL — Desarrollador Full Stack</h3>
+            <p>Conquer Blocks</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🔧</div>
+          <div class="edu-content">
+            <span class="edu-date">Ago 2026</span>
+            <h3>Git y GitHub — Full Stack</h3>
+            <p>Conquer Blocks</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">⚙️</div>
+          <div class="edu-content">
+            <span class="edu-date">Ago 2026</span>
+            <h3>Principios SOLID & Bases de Datos</h3>
+            <p>Conquer Blocks</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🐍</div>
+          <div class="edu-content">
+            <span class="edu-date">Jun–Jul 2026</span>
+            <h3>Python — Desarrollador Full Stack</h3>
+            <p>Conquer Blocks</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🐧</div>
+          <div class="edu-content">
+            <span class="edu-date">May 2026</span>
+            <h3>Linux y la Terminal</h3>
+            <p>Conquer Blocks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05. contacto</span>
+        <h2 class="section-title">Hablemos de<br/><em>tu proyecto</em></h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente o quieres explorar una colaboración? Estoy disponible y con ganas de nuevos retos.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:alexgh1975@gmail.com" class="contact-item" id="contact-email">
+            <div class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">alexgh1975@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alejandro-garcía-hernández-66975826" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
+            <div class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Alejandro García Hernández</span>
+            </div>
+          </a>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Ubicación</span>
+              <span class="contact-value">Palma, Islas Baleares, España</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta-box">
+          <div class="cta-box-inner">
+            <h3>¿Listo para empezar?</h3>
+            <p>Tanto si necesitas un perfil técnico con visión de negocio como un experto en operaciones con mentalidad data-driven, puedo aportar valor desde el primer día.</p>
+            <div class="cta-box-btns">
+              <a href="mailto:alexgh1975@gmail.com" class="btn btn-primary" id="cta-email-btn">
+                Enviar email
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/alejandro-garcía-hernández-66975826" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="cta-linkedin-btn">
+                Ver LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>AGH<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2026 Alejandro García Hernández — Diseñado con 💙 en Palma, Baleares</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/alejandro-garcía-hernández-66975826" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:alexgh1975@gmail.com" aria-label="Email" class="footer-social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
