@@ -22,7 +22,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>AGH<span class="logo-bracket">/&gt;</span>
+        <img src="logo.png" alt="AGH Logo" class="logo-img">
       </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about" class="nav-link">Sobre mí</a></li>
@@ -40,6 +40,7 @@
        HERO
   ═══════════════════════════════════════ -->
   <section class="hero" id="hero">
+    <div class="hero-image-bg"></div>
     <div class="hero-bg-grid"></div>
     <div class="hero-particles" id="hero-particles"></div>
     <div class="hero-content">
@@ -117,9 +118,12 @@
   ═══════════════════════════════════════ -->
   <section class="section about-section" id="about">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header about-header">
         <span class="section-tag">// 01. sobre mí</span>
         <h2 class="section-title">El profesional detrás<br/><em>del código y los procesos</em></h2>
+        <div class="about-avatar-wrap">
+          <img src="avatar-about.jpg" alt="Avatar About" class="avatar-small avatar-about">
+        </div>
       </div>
       <div class="about-grid">
         <div class="about-text">
@@ -207,7 +211,7 @@
 
         <div class="service-card" data-aos>
           <div class="service-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <img src="avatar-dev.jpg" alt="Avatar Dev" class="avatar-small">
           </div>
           <h3>Desarrollo Full Stack</h3>
           <p>Creación de aplicaciones web y herramientas internas usando Python, SQL, bases de datos y principios SOLID. Código limpio, mantenible y orientado a negocio.</p>
@@ -234,7 +238,7 @@
 
         <div class="service-card" data-aos>
           <div class="service-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <img src="avatar-logistics.jpg" alt="Avatar Logística" class="avatar-small">
           </div>
           <h3>Gestión Logística & Supply Chain</h3>
           <p>Diseño y gestión de cadenas de suministro eficientes. Coordinación de flotas, optimización de rutas, control de stocks y gestión de proveedores.</p>
@@ -260,7 +264,7 @@
 
         <div class="service-card" data-aos>
           <div class="service-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <img src="avatar-ops.jpg" alt="Avatar Operaciones" class="avatar-small">
           </div>
           <h3>Dirección de Operaciones</h3>
           <p>Liderazgo de equipos multidisciplinares, apertura de nuevas unidades de negocio, implementación de sistemas de gestión y mejora de eficiencia operativa.</p>
@@ -483,9 +487,13 @@
   ═══════════════════════════════════════ -->
   <section class="section contact-section" id="contact">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header contact-header">
         <span class="section-tag">// 05. contacto</span>
         <h2 class="section-title">Hablemos de<br/><em>tu proyecto</em></h2>
+        <div class="contact-avatars-wrap">
+          <img src="avatar-support.jpg" alt="Soporte" class="avatar-small avatar-contact">
+          <img src="avatar-mail.jpg" alt="Correo" class="avatar-small avatar-contact">
+        </div>
         <p class="section-subtitle">¿Tienes un proyecto en mente o quieres explorar una colaboración? Estoy disponible y con ganas de nuevos retos.</p>
       </div>
       <div class="contact-grid">

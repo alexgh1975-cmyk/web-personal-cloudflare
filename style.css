@@ -245,17 +245,19 @@ body::before {
 }
 
 .nav-logo {
-  font-family: var(--font-mono);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--clr-text);
-  letter-spacing: -.02em;
-  transition: color var(--dur-fast) var(--ease);
+  display: flex;
+  align-items: center;
+  transition: opacity var(--dur-fast) var(--ease);
 }
 
-.nav-logo:hover { color: var(--clr-accent); }
+.nav-logo:hover { opacity: 0.8; }
 
-.logo-bracket { color: var(--clr-accent); }
+.logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
 
 .nav-links {
   display: flex;
@@ -313,6 +315,25 @@ body::before {
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-h);
+}
+
+/* Imagen de fondo sutil (Matrix) */
+.hero-image-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center 20%;
+  opacity: 0.15;
+  filter: blur(6px) grayscale(40%);
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-image-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, var(--clr-bg) 95%);
 }
 
 /* Grid overlay */
@@ -1310,3 +1331,49 @@ body::before {
   .cta-box-btns { flex-direction: column; }
   .stat-item    { min-width: 100%; }
 }
+
+ / *   A v a t a r s   * / 
+ . a v a t a r - s m a l l   { 
+     w i d t h :   6 0 p x ; 
+     h e i g h t :   6 0 p x ; 
+     b o r d e r - r a d i u s :   5 0 % ; 
+     o b j e c t - f i t :   c o v e r ; 
+     b o x - s h a d o w :   0   4 p x   1 2 p x   r g b a ( 0 , 0 , 0 , 0 . 3 ) ; 
+     b o r d e r :   2 p x   s o l i d   v a r ( - - c l r - b o r d e r ) ; 
+ } 
+ 
+ . s e r v i c e - i c o n - w r a p   . a v a t a r - s m a l l   { 
+     w i d t h :   7 0 p x ; 
+     h e i g h t :   7 0 p x ; 
+     m a r g i n - b o t t o m :   1 r e m ; 
+ } 
+ 
+ . a b o u t - h e a d e r   . a b o u t - a v a t a r - w r a p   { 
+     m a r g i n - t o p :   1 . 5 r e m ; 
+ } 
+ 
+ . a v a t a r - a b o u t   { 
+     w i d t h :   8 0 p x ; 
+     h e i g h t :   8 0 p x ; 
+     b o r d e r - r a d i u s :   1 2 p x ; 
+ } 
+ 
+ . c o n t a c t - a v a t a r s - w r a p   { 
+     d i s p l a y :   f l e x ; 
+     g a p :   1 r e m ; 
+     j u s t i f y - c o n t e n t :   c e n t e r ; 
+     m a r g i n - t o p :   1 . 5 r e m ; 
+     m a r g i n - b o t t o m :   1 . 5 r e m ; 
+ } 
+ 
+ . a v a t a r - c o n t a c t   { 
+     w i d t h :   7 0 p x ; 
+     h e i g h t :   7 0 p x ; 
+     t r a n s i t i o n :   t r a n s f o r m   0 . 3 s   e a s e ; 
+ } 
+ 
+ . a v a t a r - c o n t a c t : h o v e r   { 
+     t r a n s f o r m :   t r a n s l a t e Y ( - 5 p x ) ; 
+ } 
+  
+ 
