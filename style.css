@@ -1379,3 +1379,7 @@ body::before {
  
 .avatar-about { width: 24px !important; height: 24px !important; }
 .avatar-contact { width: 21px !important; height: 21px !important; }
+
+.avatar-about { width: 40px !important; height: 40px !important; }
+.avatar-contact { width: 32px !important; height: 32px !important; }
+.logo-img { border-radius: 50% !important; width: 45px !important; height: 45px !important; object-fit: cover !important; }
